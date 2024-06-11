@@ -1,0 +1,126 @@
+:root {  
+    /* typography*/
+  
+    /* font-family */
+    --ff-poppins: 'Poppins', sans-serif;
+  
+    /* font-size */
+    --fs-1: 24px;
+    --fs-2: 18px;
+    --fs-3: 17px;
+    --fs-4: 16px;
+    --fs-5: 15px;
+    --fs-6: 14px;
+    --fs-7: 13px;
+    --fs-8: 11px;
+  
+    /* font-weight */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+  
+    /* shadow*/
+    
+    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+    --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+    --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+  
+    /* transition*/
+  
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease-in-out;
+  
+}
+
+
+
+
+/* main */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{ margin: 0 50px 0 50px; }
+  
+a { text-decoration: none; }
+  
+li { list-style: none; }
+  
+img, ion-icon, a, button, time, span { display: block; }
+  
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+  
+input, textarea {
+    display: block;
+    width: 100%;
+    background: none;
+    font: inherit;
+}
+
+html { font-family: var(--ff-poppins); }
+  
+* { background-color: black;
+    color: white;
+}
+
+@media (max-width: 800px) {
+
+    .body{ margin: 0 0 0 0; }
+}
+header{
+    height: 100vh;
+    border: 1px wheat solid;
+}
+footer{
+    height: 20vh;
+    border: 1px wheat solid;
+    display: flex;
+}
+
+/*--------------NAVBAR---------------*/
+.navbar{
+    font-size: var(--fs-6); 
+    margin: 10px 0 0 0;
+}
+.navbar .button1{
+    border-radius: 0%;
+    border: 1px white solid;
+    color: white;
+    font-size: var(--fs-7);
+}
+.navbar .button1:hover{
+    border-radius: 0%;
+    border: 1px rgb(98, 255, 0) solid;
+    color: rgb(9, 255, 0);
+}
+
+/*--------------FOOTER---------------*/
+.txt-5{
+    font-size: var(--fs-7); 
+}
+.txt-6{
+    font-size: var(--fs-8); 
+}
+
+.link-1{
+    font-size: var(--fs-7); 
+    color: white;
+}
+.link-1:hover{
+    color: white;
+}
+.list01{
+    text-align: end;
+}
