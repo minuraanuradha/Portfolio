@@ -5,10 +5,10 @@
     --ff-poppins: 'Poppins', sans-serif;
   
     /* font-size */
-    --fs-1: 24px;
-    --fs-2: 18px;
-    --fs-3: 17px;
-    --fs-4: 16px;
+    --fs-1: 120px;
+    --fs-2: 75px;
+    --fs-3: 50px;
+    --fs-4: 25px;
     --fs-5: 15px;
     --fs-6: 14px;
     --fs-7: 13px;
@@ -32,6 +32,12 @@
   
     --transition-1: 0.25s ease;
     --transition-2: 0.5s ease-in-out;
+
+    /*Colour*/
+
+    --colour-black:black;
+    --colour-white:white;
+    --colour-secondary:rgb(9, 255, 0);
   
 }
 
@@ -46,7 +52,7 @@
     box-sizing: border-box;
 }
 
-.body{ margin: 0 50px 0 50px; }
+.body{ margin: 0 0 0 0; }
   
 a { text-decoration: none; }
   
@@ -78,15 +84,32 @@ html { font-family: var(--ff-poppins); }
 @media (max-width: 800px) {
 
     .body{ margin: 0 0 0 0; }
+    header{
+        height: 100vh;
+        padding:0 0 0 0;
+    }
+    footer{
+        height: max-content;
+        display: flex;
+        padding:0 0 0 0;
+    }
+    section .collaboration{
+        
+        padding:0 0 0 0;
+    }
 }
 header{
     height: 100vh;
-    border: 1px wheat solid;
+    padding:0 50px 0 50px;
 }
 footer{
-    height: 20vh;
-    border: 1px wheat solid;
+    height: max-content;
     display: flex;
+    padding:0 50px 0 50px;
+}
+section .collaboration{
+    
+    padding:0 50px 0 50px;
 }
 
 /*--------------NAVBAR---------------*/
@@ -102,20 +125,23 @@ footer{
 }
 .navbar .button1:hover{
     border-radius: 0%;
-    border: 1px rgb(98, 255, 0) solid;
-    color: rgb(9, 255, 0);
+    border: 1px var(--colour-secondary) solid;
+    color: var(--colour-secondary);
 }
 
 /*--------------FOOTER---------------*/
 .txt-5{
     font-size: var(--fs-7); 
+    font-family: var(--ff-poppins);
 }
 .txt-6{
     font-size: var(--fs-8); 
+    font-family: var(--ff-poppins);
 }
 
 .link-1{
     font-size: var(--fs-7); 
+    font-family: var(--ff-poppins);
     color: white;
 }
 .link-1:hover{
@@ -124,3 +150,79 @@ footer{
 .list01{
     text-align: end;
 }
+
+/*------------COLLABRATION-------------*/
+.collaboration{
+    font: inherit;
+}
+
+.btn1{
+    font: inherit;
+    cursor: pointer;
+    padding-block: 8px;
+    padding-inline: 45px;
+    background-color:var(--colour-secondary);
+    color: black;
+    border: 1px var(--colour-secondary) solid;
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+}
+.btn2{
+    font: inherit;
+    cursor: pointer;
+    padding-block: 8px;
+    padding-inline: 45px;
+    border: 1px white solid;
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+}
+.txt-1{
+    font-size: var(--fs-1);
+    font-weight: var(--fw-400);
+    font-family: var(--ff-poppins);
+}
+.txt-4{
+    font-size: var(--fs-4);
+    font-weight: var(--fw-400);
+    font-family: var(--ff-poppins);
+}
+
+.buttonrow{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    column-gap: 30px;
+}
+@media (max-width: 800px) {
+
+    .txt-1{
+        font-size: var(--fs-2);
+    }
+    .txt-4{
+        font-size: var(--fs-4);
+    }
+}
+@media (max-width: 500px) {
+
+    .txt-1{
+        font-size: var(--fs-3);
+    }
+    .txt-4{
+        font-size: var(--fs-6);
+    }
+    .buttonrow{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+  
+
+  
+
+  
+
+  
