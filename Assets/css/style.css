@@ -219,6 +219,45 @@ section .collaboration{
 }
 
 
+
+.stock-ticker {
+    font-size: var(--fs-4);
+    font-weight: 700;
+    overflow:hidden;
+    user-select: none;
+    --gap: 20px;
+    display: flex;
+  }
+  
+  .stock-ticker ul {
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+  }
+  .stock-ticker ul li{
+    color: var(--colour-black);
+    background-color: var(--colour-secondary);
+  }
+  .stock-ticker ul li span{
+    background-color: var(--colour-secondary);
+    color: var(--colour-black);
+    padding-right: 50px;
+    font-size: 25px;
+    height: max-content;
+  }
+  
+  .stock-ticker:hover ul {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
   
 
   
