@@ -38,6 +38,8 @@
     --colour-black:black;
     --colour-white:white;
     --colour-secondary:rgb(9, 255, 0);
+    
+    --colour-secondary1:rgba(9, 255, 0, 0.178);
   
 }
 
@@ -286,6 +288,80 @@ section .collaboration{
   }
 
 
+  .infiniteScroll1 {
+    font-size: var(--fs-4);
+    font-weight: 700;
+    overflow:hidden;
+    user-select: none;
+    --gap: 20px;
+    display: flex;
+    rotate: 3deg;
+  }  
+  .infiniteScroll1 ul {
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+  }
+  .infiniteScroll1 ul li{
+    color: var(--colour-black);
+    background-color: var(--colour-secondary1);
+  }
+  .infiniteScroll1 ul li span{
+    background-color: var(--colour-secondary1);
+    color: var(--colour-black);
+    padding-right: 50px;
+    font-size: 25px;
+    height: max-content;
+  }
   
+  .infiniteScroll1:hover ul {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
 
+  .infiniteScroll2 {
+    font-size: var(--fs-4);
+    font-weight: 700;
+    overflow:hidden;
+    user-select: none;
+    --gap: 20px;
+    display: flex;
+    rotate: -3deg;
+  }  
+  .infiniteScroll2 ul {
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+  }
+  .infiniteScroll2 ul li{
+    color: var(--colour-black);
+    background-color: var(--colour-secondary);
+  }
+  .infiniteScroll2 ul li span{
+    background-color: var(--colour-secondary);
+    color: var(--colour-black);
+    padding-right: 50px;
+    font-size: 25px;
+    height: max-content;
+  }
   
+  .infiniteScroll2:hover ul {
+    animation-play-state: paused;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
