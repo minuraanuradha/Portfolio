@@ -7,7 +7,7 @@
     /* font-size */
     --fs-top: 11vw;
     --fs-1: 10vw;
-    --fs-2: 75px;
+    --fs-2: 5vw;
     --fs-3: 50px;
     --fs-4: 25px;
     --fs-5: 15px;
@@ -39,7 +39,6 @@
     --colour-black: black;
     --colour-white: white;
     --colour-secondary: rgb(9, 255, 0);
-
     --colour-secondary1: rgba(9, 255, 0, 0.178);
 
 }
@@ -96,6 +95,49 @@ textarea {
 
 html {
     font-family: var(--ff-poppins);
+}
+.title { /*name title*/
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-top);
+    font-weight: var(--fw-500);
+    letter-spacing: 10px;
+    line-height: .8;
+}
+.txt-1 { /*Topic*/
+    font-size: var(--fs-1);
+    font-weight: var(--fw-400);
+    font-family: var(--ff-poppins);
+}
+.txt-2 { /*Second topic*/
+    font-size: var(--fs-3);
+    font-family: var(--ff-poppins);
+    line-height: .9;
+}
+.txt-3 { /*thired topic*/
+    font-size: var(--fs-4);
+    font-weight: var(--fw-500);
+    font-family: var(--ff-poppins);
+    background-color: transparent;
+}
+.txt-4 { /*para*/
+    font-size: var(--fs-5);
+    font-family: var(--ff-poppins);
+}
+.txt-5 { /*small para*/
+    font-size: var(--fs-7);
+    font-family: var(--ff-poppins);
+    background-color: transparent;
+}
+.txt-6 { /*smallest*/
+    font-size: var(--fs-8);
+    font-family: var(--ff-poppins);
+}
+.txt-7 { /*green colour*/
+    color: var(--colour-secondary);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-400);
+    font-family: var(--ff-poppins);
+    letter-spacing: 1px;
 }
 
 * {
@@ -210,26 +252,10 @@ section .collaboration {
     height: 85%;
 }
 
-.title {
-    font-family: var(--ff-poppins);
-    font-size: var(--fs-top);
-    font-weight: var(--fw-500);
-    letter-spacing: 15px;
-    line-height: .8;
-}
+
 
 
 /*--------------FOOTER---------------*/
-.txt-5 {
-    font-size: var(--fs-7);
-    font-family: var(--ff-poppins);
-}
-
-.txt-6 {
-    font-size: var(--fs-8);
-    font-family: var(--ff-poppins);
-}
-
 .linklist {
     text-align: end;
 }
@@ -247,25 +273,38 @@ section .collaboration {
     text-decoration: solid;
     font-weight: var(--fw-600);
 }
-
+.Services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicesrow {
+    display: flex;
+    justify-content:space-around;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.servicesrow .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-;
+    align-items: center;
+    width: 240px;
+    height: max-content;
+    background-color: rgba(42, 42, 42, 0);
+    margin-top: 25px;
+    border: 2px white solid;
+    color: black;
+}/*
+.servicesrow .box:hover {
+    color: var(--colour-black);
+    transform: scale(1.05);
+    border: 4px var(--colour-white) solid;
+    background-color: var(--colour-black);
+}*/
 
 /*------------COLLABRATION-------------*/
-.collaboration {
-    font: var(--ff-poppins);
-}
-
-.txt-1 {
-    font-size: var(--fs-1);
-    font-weight: var(--fw-400);
-    font-family: var(--ff-poppins);
-}
-
-.txt-4 {
-    color: var(--colour-secondary);
-    font-size: var(--fs-4);
-    font-weight: var(--fw-400);
-    font-family: var(--ff-poppins);
-}
 
 .buttonrow {
     display: flex;
@@ -307,6 +346,24 @@ section .collaboration {
     color: var(--colour-black);
 }
 
+.btn3 {
+    font: inherit;
+    cursor: pointer;
+    padding-block: 8px;
+    padding-inline: 45px;
+    border-top: 1px white solid;
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    align-self:self-end;
+}
+
+.btn3:hover {
+    background-color: var(--colour-white);
+    color: var(--colour-black);
+}
 
 
 /*------------LOOP-------------*/
@@ -360,7 +417,7 @@ section .collaboration {
     user-select: none;
     --gap: 20px;
     display: flex;
-    rotate: 3deg;
+    rotate: 1deg;
 }
 
 .infiniteScroll1 ul {
@@ -403,7 +460,7 @@ section .collaboration {
     user-select: none;
     --gap: 20px;
     display: flex;
-    rotate: -3deg;
+    rotate: -1deg;
 }
 
 .infiniteScroll2 ul {
@@ -436,4 +493,8 @@ section .collaboration {
     to {
         transform: translateX(calc(-100% - var(--gap)));
     }
+}
+
+.para{
+    margin:0 10% 0 10%;
 }
