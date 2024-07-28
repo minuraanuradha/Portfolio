@@ -9,8 +9,8 @@
     --fs-1: 8vw;
     --fs-2: 5vw;
     --fs-3: 3vw;
-    --fs-4: 25px;
-    --fs-5: 1.8vw;
+    --fs-4: 1.5vw;
+    --fs-5: 1.vw;
     --fs-6: 14px;
     --fs-7: 13px;
     --fs-8: 11px;
@@ -127,6 +127,8 @@ html {
     font-size: var(--fs-7);
     font-family: var(--ff-poppins);
     background-color: transparent;
+    font-weight:lighter;
+    letter-spacing: 0.5px;   
 }
 .txt-6 { /*smallest*/
     font-size: var(--fs-8);
@@ -157,6 +159,14 @@ footer {
     padding: 0 50px 0 50px;
 }
 
+section.Aboutme{
+    padding: 0 50px 0 50px;
+}
+
+section.Services{
+    padding: 0 50px 0 50px;
+}
+
 section .collaboration {
     padding: 0 50px 0 50px;
 }
@@ -179,8 +189,16 @@ section .collaboration {
         padding: 0 20px 0 20px;
     }
 
+    section.Aboutme{
+        padding: 0 20px 0 20px;
+    }
+    
+    section.Services{
+        padding: 0 20px 0 20px;
+    }
+
     section .collaboration {
-        padding: 0 50px 0 50px;
+        padding: 0 20px 0 20px;
     }
 
     .txt-4 {
@@ -191,12 +209,33 @@ section .collaboration {
 /*------------Sections(500)------------*/
 @media (max-width: 500px) {
 
+    :root
+    {
+        --fs-top: 16vw;
+        --fs-1: 10vw;
+        --fs-2: 100vw;
+        --fs-3: 7vw;
+        --fs-4: 4vw;
+        --fs-5: 4vw;
+        --fs-6: 12px;
+        --fs-7: 12px;
+        --fs-8: 8px;
+    }
+
     header {
         height: 100vh;
         padding: 0 10px 0 10px;
     }
 
     footer {
+        padding: 0 10px 0 10px;
+    }
+
+    section.Aboutme{
+        padding: 0 10px 0 10px;
+    }
+    
+    section.Services{
         padding: 0 10px 0 10px;
     }
 
@@ -249,7 +288,7 @@ section .collaboration {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 85%;
+    height: 80%;
 }
 
 
@@ -284,17 +323,26 @@ section .collaboration {
     padding-top: 25px;
     padding-bottom: 50px;
 }
+@media (max-width: 500px) {
+
+    .servicesrow {
+        display: block;
+        justify-content:space-around;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+}
 .servicesrow .box {
     display: flex;
     flex-direction: column;
     justify-content: flex-;
     align-items: center;
-    width: 30%;
     height: max-content;
     background-color: rgba(42, 42, 42, 0);
     margin-top: 25px;
     border: 2px white solid;
     color: black;
+    padding: 0;
 }/*
 .servicesrow .box:hover {
     color: var(--colour-black);
@@ -361,7 +409,6 @@ section .collaboration {
     font: inherit;
     cursor: pointer;
     padding-block: 8px;
-    padding-inline: 45px;
     border-top: 1px white solid;
     font-size: var(--fs-6);
     font-weight: var(--fw-400);
