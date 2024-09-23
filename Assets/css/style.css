@@ -1,0 +1,746 @@
+:root {
+    /* typography*/
+
+    /* font-family */
+    --ff-poppins: 'Poppins', sans-serif;
+
+    /* font-size */
+    --fs-top: 11vw;
+    --fs-1: 8vw;
+    --fs-2: 5vw;
+    --fs-3: 3vw;
+    --fs-4: 1.5vw;
+    --fs-5: 1.vw;
+    --fs-6: 14px;
+    --fs-7: 1vw;
+    --fs-8: 11px;
+
+    /* font-weight */
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+
+    /* shadow*/
+
+    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+    --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+    --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+    /* transition*/
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease-in-out;
+
+    /*Colour*/
+
+    --colour-black: black;
+    --colour-white: white;
+    --colour-secondary: rgb(9, 255, 0);
+    --colour-secondary1: rgba(9, 255, 0, 0.178);
+
+}
+
+
+
+
+/* main */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0 0 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img,
+ion-icon,
+a,
+button,
+time,
+span {
+    display: block;
+}
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    background: none;
+    font: inherit;
+}
+
+html {
+    font-family: var(--ff-poppins);
+}
+
+.title {
+    /*name title*/
+    font-family: var(--ff-poppins);
+    font-size: var(--fs-top);
+    font-weight: var(--fw-500);
+    letter-spacing: 8px;
+    line-height: .8;
+}
+
+.txt-1 {
+    /*Topic*/
+    font-size: var(--fs-1);
+    font-weight: var(--fw-400);
+    font-family: var(--ff-poppins);
+}
+
+.txt-2 {
+    /*Second topic*/
+    font-size: var(--fs-3);
+    font-family: var(--ff-poppins);
+    line-height: .9;
+}
+
+.txt-3 {
+    /*thired topic*/
+    font-size: var(--fs-4);
+    font-weight: var(--fw-500);
+    font-family: var(--ff-poppins);
+    background-color: transparent;
+}
+
+.txt-4 {
+    /*para*/
+    font-size: var(--fs-5);
+    font-family: var(--ff-poppins);
+}
+
+.txt-5 {
+    /*small para*/
+    font-size: var(--fs-7);
+    font-family: var(--ff-poppins);
+    background-color: transparent;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+}
+
+.txt-6 {
+    /*smallest*/
+    font-size: var(--fs-8);
+    font-family: var(--ff-poppins);
+}
+
+.txt-7 {
+    /*green colour*/
+    color: var(--colour-secondary);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-400);
+    font-family: var(--ff-poppins);
+    letter-spacing: 1px;
+}
+
+* {
+    background-color: black;
+    color: white;
+}
+
+/*--------------Sections--------------*/
+header {
+    height: 100vh;
+    padding: 0 50px 0 50px;
+    display: flex;
+}
+
+footer {
+    height: max-content;
+    display: flex;
+    padding: 0 50px 0 50px;
+}
+
+section.Aboutme {
+    padding: 0 50px 0 50px;
+}
+
+section.Services {
+    padding: 0 50px 0 50px;
+}
+
+section.portfolio{
+    padding: 0 50px 0 50px;
+}
+
+section .collaboration {
+    padding: 0 50px 0 50px;
+}
+
+.textscrool {
+    padding-bottom: 40px;
+}
+
+/*------------Sections(800)------------*/
+@media (max-width: 800px) {
+
+    header {
+        height: 100vh;
+        padding: 0 20px 0 20px;
+    }
+
+    footer {
+        height: max-content;
+        display: flex;
+        padding: 0 20px 0 20px;
+    }
+
+    section.Aboutme {
+        padding: 0 20px 0 20px;
+    }
+
+    section.Services {
+        padding: 0 20px 0 20px;
+    }
+
+    section.portfolio{
+        padding: 0 20px 0 20px;
+    }
+
+    section .collaboration {
+        padding: 0 20px 0 20px;
+    }
+
+    .txt-4 {
+        font-size: var(--fs-4);
+    }
+}
+
+/*------------Sections(500)------------*/
+@media (max-width: 500px) {
+
+    :root {
+        --fs-top: 16vw;
+        --fs-1: 10vw;
+        --fs-2: 100vw;
+        --fs-3: 7vw;
+        --fs-4: 4vw;
+        --fs-5: 4vw;
+        --fs-6: 12px;
+        --fs-7: 12px;
+        --fs-8: 8px;
+    }
+
+    header {
+        height: 100vh;
+        padding: 0 10px 0 10px;
+    }
+
+    footer {
+        padding: 0 10px 0 10px;
+    }
+
+    section.Aboutme {
+        padding: 0 10px 0 10px;
+    }
+
+    section.Services {
+        padding: 0 10px 0 10px;
+    }
+
+    section.portfolio{
+        padding: 0 10px 0 10px;
+    }
+
+    section .collaboration {
+        padding: 0 10px 0 10px;
+    }
+
+    .textscrool {
+        padding-bottom: 20px;
+    }
+
+    .txt-4 {
+        font-size: var(--fs-6);
+    }
+
+    .buttonrow {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
+
+/*-------------ABOUT ME-------------*/
+.icon {
+    font-size: 5vw;
+    margin: 1vw;
+}
+
+.icon1 {
+    height: 5vw;
+    margin: 1vw
+}
+
+@media (max-width: 768px) {
+    .icon {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        font-size: 20px;
+    }
+}
+
+
+/*--------------NAVBAR---------------*/
+.navbar {
+    font-size: var(--fs-6);
+    margin: 10px 0 0 0;
+}
+
+.navbar .button1 {
+    border-radius: 0%;
+    border: 1px white solid;
+    color: white;
+    font-size: var(--fs-7);
+}
+
+.navbar .button1:hover {
+    border-radius: 0%;
+    background-color: var(--colour-white);
+    border: 1px var(--colour-white) solid;
+    color: var(--colour-black);
+}
+
+
+/*------------ TOP HEDING ------------*/
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+}
+
+
+
+/*--------------ABOUT ME---------------*/
+.Aboutme {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Aboutme.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.counter {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--colour-secondary);
+    /* Adjust the color as needed */
+}
+
+.plus {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--colour-secondary);
+    /* Same color as the counter */
+    margin-left: 0.1rem;
+    /* Adds a small space between the number and the plus symbol */
+}
+
+.counters {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3vw;
+}
+
+.counter-item {
+    margin: 0px 0;
+}
+
+.counter-item p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .counters {
+        margin-bottom: 30px;
+    }
+
+    .counter {
+        font-size: 2.5rem;
+    }
+
+    .plus {
+        font-size: 2.5rem;
+    }
+
+    .counter-item p {
+        font-size: 1rem;
+    }
+}
+
+/*------------PORTFOLIO-------------*/
+
+.port-bottom{
+    padding: 10px 0 10px 0;
+    background-color: rgb(19, 19, 19);
+}
+.project-grid{
+    justify-content: space-around;
+    background-color: rgb(19, 19, 19);
+}
+
+.project-card{
+    padding:0% !important;
+    width: 30vw;
+    height: 39vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(19, 19, 19);
+}
+
+.project-image{
+    width: 100%;
+    height: 90%;
+    background-color: rgb(27, 27, 27);
+}
+
+@media (max-width: 500px) {
+    .project-grid{
+        display: block;
+    }
+    .project-card{
+        width: 100%;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/*--------------FOOTER---------------*/
+.linklist {
+    text-align: end;
+}
+
+.link-1 {
+    font-size: var(--fs-7);
+    font-family: var(--ff-poppins);
+    color: white;
+    height: 25px;
+    padding: 0 5px 0 0;
+}
+
+.link-1:hover {
+    color: white;
+    text-decoration: solid;
+    font-weight: var(--fw-600);
+}
+
+.Services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesrow {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 500px) {
+
+    .servicesrow {
+        display: block;
+        justify-content: space-around;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+}
+
+.servicesrow .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-;
+    align-items: center;
+    height: max-content;
+    background-color: rgba(42, 42, 42, 0);
+    margin-top: 25px;
+    border: 1px white solid;
+    color: black;
+    padding: 0;
+}
+
+/*
+.servicesrow .box:hover {
+    color: var(--colour-black);
+    transform: scale(1.05);
+    border: 4px var(--colour-white) solid;
+    background-color: var(--colour-black);
+}*/
+
+
+
+/*------------COLLABRATION & SERVICES-------------*/
+
+.buttonrow {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    column-gap: 30px;
+}
+
+.btn1 {
+    font: inherit;
+    cursor: pointer;
+    padding-block: 8px;
+    padding-inline: 45px;
+    background-color: var(--colour-secondary);
+    color: black;
+    border: 1px var(--colour-secondary) solid;
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+}
+
+.btn1:hover {
+    background-color: var(--colour-black);
+    color: var(--colour-secondary);
+}
+.btn1:active {
+    background-color: var(--colour-black);
+    color: var(--colour-secondary);
+}
+
+.btn2 {
+    font: inherit;
+    cursor: pointer;
+    padding-block: 8px;
+    padding-inline: 45px;
+    border: 1px white solid;
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+}
+
+.btn2:hover {
+    background-color: var(--colour-white);
+    color: var(--colour-black);
+}
+
+.btn3 {
+    font: inherit;
+    cursor: pointer;
+    padding-block: 8px;
+    border-top: 1px white solid;
+    font-size: var(--fs-6);
+    font-weight: var(--fw-400);
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    align-self: self-end;
+}
+
+.btn3:hover {
+    background-color: var(--colour-white);
+    color: var(--colour-black);
+}
+
+
+/*------------LOOP-------------*/
+.infiniteScroll {
+    font-size: var(--fs-4);
+    font-weight: 700;
+    overflow: hidden;
+    user-select: none;
+    --gap: 20px;
+    display: flex;
+    /*rotate: 4deg;*/
+}
+
+.infiniteScroll ul {
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+}
+
+.infiniteScroll ul li {
+    color: var(--colour-black);
+    background-color: var(--colour-secondary);
+}
+
+.infiniteScroll ul li span {
+    background-color: var(--colour-secondary);
+    color: var(--colour-black);
+    padding-right: 50px;
+    font-size: 25px;
+    height: max-content;
+}
+
+.infiniteScroll:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/*------------LOOPANGLE01-------------*/
+.infiniteScroll1 {
+    font-size: var(--fs-4);
+    font-weight: 700;
+    overflow: hidden;
+    user-select: none;
+    --gap: 20px;
+    display: flex;
+    rotate: 1deg;
+}
+
+.infiniteScroll1 ul {
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+}
+
+.infiniteScroll1 ul li {
+    color: var(--colour-black);
+    background-color: var(--colour-secondary1);
+}
+
+.infiniteScroll1 ul li span {
+    background-color: var(--colour-secondary1);
+    color: var(--colour-black);
+    padding-right: 50px;
+    font-size: 25px;
+    height: max-content;
+}
+
+.infiniteScroll1:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/*------------LOOPANGLE02-------------*/
+.infiniteScroll2 {
+    font-size: var(--fs-4);
+    font-weight: 700;
+    overflow: hidden;
+    user-select: none;
+    --gap: 20px;
+    display: flex;
+    rotate: -1deg;
+}
+
+.infiniteScroll2 ul {
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scroll 20s linear infinite;
+}
+
+.infiniteScroll2 ul li {
+    color: var(--colour-black);
+    background-color: var(--colour-secondary);
+}
+
+.infiniteScroll2 ul li span {
+    background-color: var(--colour-secondary);
+    color: var(--colour-black);
+    padding-right: 50px;
+    font-size: 25px;
+    height: max-content;
+}
+
+.infiniteScroll2:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.para {
+    margin: 0 10% 0 10%;
+}
+
+/*------------COURSER-------------*/
+/* The basic styling for the circle trail */
+.circle {
+    position: absolute;
+    width: 14px; /* You can adjust the size */
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight transparency */
+    pointer-events: none;
+    z-index: 9999;
+    animation: fadeOut 0.9s ease-out forwards;
+}
+
+/* Animation to gradually fade out and shrink the circles */
+@keyframes fadeOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5); /* Shrink the circle */
+        opacity: 0;
+    }
+}
+
+/* Hide the default cursor */
+body {
+    cursor: none;
+}
