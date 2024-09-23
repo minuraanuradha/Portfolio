@@ -12,7 +12,7 @@
     --fs-4: 1.5vw;
     --fs-5: 1.vw;
     --fs-6: 14px;
-    --fs-7: 13px;
+    --fs-7: 1vw;
     --fs-8: 11px;
 
     /* font-weight */
@@ -96,45 +96,61 @@ textarea {
 html {
     font-family: var(--ff-poppins);
 }
-.title { /*name title*/
+
+.title {
+    /*name title*/
     font-family: var(--ff-poppins);
     font-size: var(--fs-top);
     font-weight: var(--fw-500);
     letter-spacing: 8px;
     line-height: .8;
 }
-.txt-1 { /*Topic*/
+
+.txt-1 {
+    /*Topic*/
     font-size: var(--fs-1);
     font-weight: var(--fw-400);
     font-family: var(--ff-poppins);
 }
-.txt-2 { /*Second topic*/
+
+.txt-2 {
+    /*Second topic*/
     font-size: var(--fs-3);
     font-family: var(--ff-poppins);
     line-height: .9;
 }
-.txt-3 { /*thired topic*/
+
+.txt-3 {
+    /*thired topic*/
     font-size: var(--fs-4);
     font-weight: var(--fw-500);
     font-family: var(--ff-poppins);
     background-color: transparent;
 }
-.txt-4 { /*para*/
+
+.txt-4 {
+    /*para*/
     font-size: var(--fs-5);
     font-family: var(--ff-poppins);
 }
-.txt-5 { /*small para*/
+
+.txt-5 {
+    /*small para*/
     font-size: var(--fs-7);
     font-family: var(--ff-poppins);
     background-color: transparent;
-    font-weight:lighter;
-    letter-spacing: 0.5px;   
+    font-weight: 100;
+    letter-spacing: 0.2px;
 }
-.txt-6 { /*smallest*/
+
+.txt-6 {
+    /*smallest*/
     font-size: var(--fs-8);
     font-family: var(--ff-poppins);
 }
-.txt-7 { /*green colour*/
+
+.txt-7 {
+    /*green colour*/
     color: var(--colour-secondary);
     font-size: var(--fs-5);
     font-weight: var(--fw-400);
@@ -151,6 +167,7 @@ html {
 header {
     height: 100vh;
     padding: 0 50px 0 50px;
+    display: flex;
 }
 
 footer {
@@ -159,11 +176,11 @@ footer {
     padding: 0 50px 0 50px;
 }
 
-section.Aboutme{
+section.Aboutme {
     padding: 0 50px 0 50px;
 }
 
-section.Services{
+section.Services {
     padding: 0 50px 0 50px;
 }
 
@@ -189,11 +206,11 @@ section .collaboration {
         padding: 0 20px 0 20px;
     }
 
-    section.Aboutme{
+    section.Aboutme {
         padding: 0 20px 0 20px;
     }
-    
-    section.Services{
+
+    section.Services {
         padding: 0 20px 0 20px;
     }
 
@@ -209,8 +226,7 @@ section .collaboration {
 /*------------Sections(500)------------*/
 @media (max-width: 500px) {
 
-    :root
-    {
+    :root {
         --fs-top: 16vw;
         --fs-1: 10vw;
         --fs-2: 100vw;
@@ -231,11 +247,11 @@ section .collaboration {
         padding: 0 10px 0 10px;
     }
 
-    section.Aboutme{
+    section.Aboutme {
         padding: 0 10px 0 10px;
     }
-    
-    section.Services{
+
+    section.Services {
         padding: 0 10px 0 10px;
     }
 
@@ -258,10 +274,31 @@ section .collaboration {
     }
 }
 
-/*-------------COMPONENTS-------------*/
 
 
-/*--------------HEADER---------------*/
+/*-------------ABOUT ME-------------*/
+.icon {
+    font-size: 5vw;
+    margin: 1vw;
+}
+
+.icon1 {
+    height: 5vw;
+    margin: 1vw
+}
+
+@media (max-width: 768px) {
+    .icon {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .icon {
+        font-size: 20px;
+    }
+}
+
 
 /*--------------NAVBAR---------------*/
 .navbar {
@@ -283,12 +320,85 @@ section .collaboration {
     color: var(--colour-black);
 }
 
-/*-----------------------------------*/
+
+/*------------ TOP HEDING ------------*/
 .name {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 80%;
+}
+
+
+
+/*--------------ABOUT ME---------------*/
+.Aboutme {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Aboutme.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.counter {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--colour-secondary);
+    /* Adjust the color as needed */
+}
+
+.plus {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--colour-secondary);
+    /* Same color as the counter */
+    margin-left: 0.1rem;
+    /* Adds a small space between the number and the plus symbol */
+}
+
+.counters {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3vw;
+}
+
+.counter-item {
+    margin: 0px 0;
+}
+
+.counter-item p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .counters {
+        margin-bottom: 30px;
+    }
+
+    .counter {
+        font-size: 2.5rem;
+    }
+
+    .plus {
+        font-size: 2.5rem;
+    }
+
+    .counter-item p {
+        font-size: 1rem;
+    }
 }
 
 
@@ -312,26 +422,30 @@ section .collaboration {
     text-decoration: solid;
     font-weight: var(--fw-600);
 }
+
 .Services {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .servicesrow {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     padding-top: 25px;
     padding-bottom: 50px;
 }
+
 @media (max-width: 500px) {
 
     .servicesrow {
         display: block;
-        justify-content:space-around;
+        justify-content: space-around;
         padding-top: 25px;
         padding-bottom: 50px;
     }
 }
+
 .servicesrow .box {
     display: flex;
     flex-direction: column;
@@ -340,10 +454,12 @@ section .collaboration {
     height: max-content;
     background-color: rgba(42, 42, 42, 0);
     margin-top: 25px;
-    border: 2px white solid;
+    border: 1px white solid;
     color: black;
     padding: 0;
-}/*
+}
+
+/*
 .servicesrow .box:hover {
     color: var(--colour-black);
     transform: scale(1.05);
@@ -352,18 +468,8 @@ section .collaboration {
 }*/
 
 
-.Aboutme {
-    height: max-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.Aboutme.right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-/*------------COLLABRATION-------------*/
+
+/*------------COLLABRATION & SERVICES-------------*/
 
 .buttonrow {
     display: flex;
@@ -386,6 +492,10 @@ section .collaboration {
 }
 
 .btn1:hover {
+    background-color: var(--colour-black);
+    color: var(--colour-secondary);
+}
+.btn1:active {
     background-color: var(--colour-black);
     color: var(--colour-secondary);
 }
@@ -415,7 +525,7 @@ section .collaboration {
     width: 100%;
     height: max-content;
     text-align: center;
-    align-self:self-end;
+    align-self: self-end;
 }
 
 .btn3:hover {
@@ -553,6 +663,6 @@ section .collaboration {
     }
 }
 
-.para{
-    margin:0 10% 0 10%;
+.para {
+    margin: 0 10% 0 10%;
 }
