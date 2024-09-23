@@ -43,6 +43,9 @@
     <!-- FontAwesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+    <!-- ScrollReveal - lightweight library for scroll options-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <title> Minura Anuradha | Web Developer & UI/UX Designer Portfolio </title>
 
 </head>
@@ -54,7 +57,7 @@
     <header>
         <!--NAV-->
         <nav class="navbar navbar-expand-sm navbar-dark ">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand inout" href="#">
                 <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -64,31 +67,30 @@
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mr-auto mt-2 ml-5 mt-lg-0">
-                    <li class="nav-item active mr-4">
+                    <li class="nav-item active mr-4 inout">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item mr-4 inout">
                         <a class="nav-link" href="#">Services</a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item mr-4 inout">
                         <a class="nav-link " href="#">Portfolio</a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item mr-4 inout">
                         <a class="nav-link " href="#">Contact</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <button class="btn my-2 my-sm-0 button1" type="submit">Get In Touch</button>
+                    <button class="btn my-2 my-sm-0 button1 inout" type="submit">Get In Touch</button>
                 </form>
             </div>
         </nav>
 
         <!--TEXT-->
-        <div class="col- col-md-11 name">
-            <h1 class="title mt-5">Minura</h1>
-            <h1 class="title">Anuradha</h1>
-            <p class="txt-5 ">Hello ,my name is Minura Anuradha nice to meet you I would like to welcome you with my
-                personal portfolio </p>
+        <div class="col- col-md-11 name ">
+            <h1 class="title mt-5 inout" id="name1"></h1> <!-- First part of name -->
+            <h1 class="title inout" id="name2"></h1> <!-- Second part of name -->
+            <p class="txt-5 inout" id="greeting"></p> <!-- Text content to type -->
         </div>
 
     </header>
@@ -97,11 +99,11 @@
     <section class="Aboutme pt-5 pb-5 ">
         <div class="row col-12 col-md-12 ">
             <div class="left col-12 col-md-6">
-                <h6 class="text-left txt-7">ABOUT ME</h6>
-                <h6 class="text-left txt-2 pt-2">
+                <h6 class="text-left txt-7 inout">ABOUT ME</h6>
+                <h6 class="text-left txt-2 pt-2 inout">
                     I can deliver result that  exceed your expectaions.
                 </h6>
-                <p class="txt-5 text-left ">I am passionate about crafting visually appealing, intuitive, and responsive designs that seamlessly combine form and function. With a strong foundation in web development and a focus on front-end technologies, I strive to deliver user-centric solutions that exceed expectations. My expertise spans across UI/UX design, web development, and graphic design, enabling me to create captivating digital experiences. I'm committed to producing high-quality, clean code and design systems that enhance both aesthetics and performance. Whether it's a website, mobile app, or digital interface, I aim to deliver projects that leave a lasting impact.</p>
+                <p class="txt-5 text-left inout ">I am passionate about crafting visually appealing, intuitive, and responsive designs that seamlessly combine form and function. With a strong foundation in web development and a focus on front-end technologies, I strive to deliver user-centric solutions that exceed expectations. My expertise spans across UI/UX design, web development, and graphic design, enabling me to create captivating digital experiences. I'm committed to producing high-quality, clean code and design systems that enhance both aesthetics and performance. Whether it's a website, mobile app, or digital interface, I aim to deliver projects that leave a lasting impact.</p>
             </div>
             <div class="right col-12 col-md-6">
                 
@@ -113,16 +115,16 @@
 
             </div>
             <div class="right col-12 col-md-6">
-                <div class="counters">
-                    <div class="counter-item">
-                        <h2><span class="counter" data-target="8">0</span>+</h2>
+                <div class="counters ">
+                    <div class="counter-item inout">
+                        <h2><span class="counter " data-target="8">0</span>+</h2>
                         <p class="txt-5">Projects <br> Completed</p>
                     </div>
-                    <div class="counter-item">
+                    <div class="counter-item inout">
                         <h2><span class="counter" data-target="5">0</span>+</h2>
                         <p class="txt-5">World <br>Clients</p>
                     </div>
-                    <div class="counter-item">
+                    <div class="counter-item inout">
                         <h2><span class="counter" data-target="1">0</span>+</h2>
                         <p class="txt-5">Years <br> Experience</p>
                     </div>
@@ -131,13 +133,13 @@
         </div>
 
 
-        <div class="row mt-2">
+        <div class="row mt-2 inout">
             <h6 class="text-center txt-3 pt-1">
                 Expereince  
             </h6>
         </div>
-        <div class="col-12">
-            <div class="row mt-2 d-flex justify-content-center" style="border: 2px rgba(255, 255, 255, 0) solid;">
+        <div class="col-12 inout">
+            <div class="row mt-2 d-flex justify-content-center " style="border: 2px rgba(255, 255, 255, 0) solid;">
                 <i class="devicon-html5-plain-wordmark colored " style="font-size: 5vw;margin: 1vw;"></i>
                 <i class="devicon-css3-plain-wordmark colored " style="font-size: 5vw;margin: 1vw;"></i>
                 <i class="devicon-javascript-plain colored " style="font-size: 5vw;margin: 1vw;"></i>
@@ -156,12 +158,12 @@
                 <i class="devicon-postman-plain colored " style="font-size: 5vw;margin: 1vw;"></i>
             </div>  
         </div>
-        <div class="row mt-4">
+        <div class="row mt-4 inout">
             <h6 class="text-center txt-3 pt-1">
                 Design Tools
             </h6>
         </div>
-        <div class="col-10 ">
+        <div class="col-10 inout">
             <div class="row mt-2 d-flex justify-content-center" style="border: 2px rgba(255, 255, 255, 0) solid;">
                 
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="m-" style="height: 5vw;margin: 1vw"/>
@@ -181,7 +183,7 @@
 
 
     <!--SCROLL LOOP-->
-    <section class="textscrool">
+    <section class="textscrool ">
                 <!--LOOP01-->
                 <div class="infiniteScroll1">
                     <ul>
@@ -296,7 +298,7 @@
 
     <!--SERVICES-->
     <section class="Services pt-5 pb-5  ">
-        <div>
+        <div class="inout">
             <h6 class="text-center txt-7">SERVICES</h6>
             <h6 class="text-center txt-2 pt-2">
                 Available services that <br> I can work on
@@ -304,17 +306,17 @@
             <p class="txt-5 text-center para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro rerum, nihil fuga, voluptates quisquam culpa molestias dolore beatae necessitatibus placeat saepe repellat numquam libero voluptate a facilis maiores id amet!</p>    
         </div>
         <div class="col-sm-12  servicesrow">
-            <div class="col-sm-3 col-12 box ">
+            <div class="col-sm-3 col-12 box inout">
                 <img src="" alt="">
                 <h6 class="txt-3 py-3">UI/UX Design</h6>
                 <button class="btn3 ">See More</button>
             </div>
-            <div class="col-sm-3 col-12 box ">
+            <div class="col-sm-3 col-12 box inout">
                 <img src="" alt="">
                 <h6 class="txt-3 py-3">Web Development</h6>
                 <button class="btn3 ">See More</button>
             </div>
-            <div class="col-sm-3 col-12 box ">
+            <div class="col-sm-3 col-12 box inout">
                 <img src="" alt="">
                 <h6 class="txt-3 py-3">Grapic Design</h6>
                 <button class="btn3 ">See More</button>
@@ -327,8 +329,8 @@
     <section class="portfolio pt-5 pb-5 " style="background-color: rgb(19, 19, 19);">
         <div class="port-top col-12 col-md-12 pb-3" style="background-color: rgb(19, 19, 19);">
             <div class="left col-12 col-md-6 " style="background-color: rgb(19, 19, 19);">
-                <h6 class="text-left txt-7" style="background-color: rgb(19, 19, 19);">PORTFOLIO</h6>
-                <h6 class="text-left txt-2 pt-2" style="background-color: rgb(19, 19, 19);">
+                <h6 class="text-left txt-7 sideout" style="background-color: rgb(19, 19, 19);">PORTFOLIO</h6>
+                <h6 class="text-left txt-2 pt-2 sideout" style="background-color: rgb(19, 19, 19);">
                     I can deliver result that  exceed your expectaions.
                 </h6>
             </div>
@@ -338,16 +340,16 @@
         </div>
     </section>   
 
-    <section class="portfolio-row">
+    <section class="portfolio-row ">
         <div class=" port-bottom  " >
             <div class="col-12 col-md-12 d-block d-md-flex project-grid">
-                <div class=" project-card" id="project01">
+                <div class=" project-card inout" id="project01">
                     <img src="" alt="" class="project-image">
                 </div>
-                <div class=" project-card" id="project01">
+                <div class=" project-card inout" id="project01">
                     <img src="" alt="" class="project-image">
                 </div>
-                <div class=" project-card" id="project01">
+                <div class=" project-card inout" id="project01">
                     <img src="" alt="" class="project-image">
                 </div>
             </div>
@@ -415,13 +417,13 @@
 
     <!--CONTACTME-->
     <section class="contact pt-5 pb-5">
-        <h6 class="text-center txt-7">CONTACT ME </h6>
-        <h1 class="text-center txt-1">
+        <h6 class="text-center txt-7 inout">CONTACT ME </h6>
+        <h1 class="text-center txt-1 inout">
             Lets talk to <br> Collaboration
         </h1>
         <div class="col-lg-12 buttonrow">
-            <button class="btn1">Get in Touch</button>
-            <button class="btn2">Hire Me now</button>
+            <button class="btn1 inout">Get in Touch</button>
+            <button class="btn2 inout">Hire Me now</button>
         </div>
     </section>
 
@@ -451,8 +453,6 @@
             </div>
         </div>
     </footer>
-    
-    
     <!-- Custom JavaScript link -->
     <script src="./assets/js/script.js"></script>
 
@@ -466,51 +466,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                const counters = document.querySelectorAll('.counter');
-                const speed = 500; // Slower speed (adjust this value as needed)
-        
-                // Function to update the counter
-                const updateCount = (counter) => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-                    const increment = target / speed;
-        
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(() => updateCount(counter), 50); // Delay for smoother animation
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-        
-                // Intersection Observer callback
-                const handleIntersection = (entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            const counter = entry.target;
-                            updateCount(counter);
-                            observer.unobserve(counter); // Stop observing once the counter has started
-                        }
-                    });
-                };
-        
-                // Create Intersection Observer
-                const observer = new IntersectionObserver(handleIntersection, {
-                    threshold: 0.5 // Starts when 50% of the counter is in view
-                });
-        
-                // Observe each counter
-                counters.forEach(counter => {
-                    observer.observe(counter);
-                });
-            });
-        </script>
-        
-        
+        crossorigin="anonymous"></script>        
         
 </body>
 

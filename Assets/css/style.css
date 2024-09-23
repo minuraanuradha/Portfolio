@@ -714,3 +714,33 @@ section .collaboration {
 .para {
     margin: 0 10% 0 10%;
 }
+
+/*------------COURSER-------------*/
+/* The basic styling for the circle trail */
+.circle {
+    position: absolute;
+    width: 14px; /* You can adjust the size */
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7); /* Slight transparency */
+    pointer-events: none;
+    z-index: 9999;
+    animation: fadeOut 0.9s ease-out forwards;
+}
+
+/* Animation to gradually fade out and shrink the circles */
+@keyframes fadeOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.5); /* Shrink the circle */
+        opacity: 0;
+    }
+}
+
+/* Hide the default cursor */
+body {
+    cursor: none;
+}
