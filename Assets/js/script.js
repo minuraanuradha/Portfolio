@@ -1,6 +1,3 @@
-    document.getElementById('navbarToggle').addEventListener('click', function () {
-        this.classList.toggle('clicked');
-    });
     /*----------------------------------------------------------*/
     //Section Scroll Animation
 
@@ -137,7 +134,7 @@
         this.classList.toggle('clicked');
     });
 
-    
+
     /*----------------------------------------------------------*/
     //Portfolio Chnager
 

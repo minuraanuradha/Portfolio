@@ -46,22 +46,28 @@
     <!-- ScrollReveal - lightweight library for scroll options-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <style>
+        /* Instaclass */
+        .map { -webkit-filter: grayscale(100%); }
+    </style>
+
     <title> Minura Anuradha | Contact </title>
 
 </head>
 <body>
-    <!--HEADER-->
-    <header>
+
+        <!--NAV-->
+    <header style="height: max-content;">
         <!--NAV-->
         <nav class="navbar navbar-expand-sm navbar-dark">
             <a class="navbar-brand " href="#">
                 <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
             </a>
-            
+
             <button class="navbar-toggler" id="navbarToggle" type="button" data-toggle="collapse"
                 data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="hamburger"></span>
+                <span class="hamburger"><i class="fa-sharp fa-solid fa-bars" style="color: #ffffff;"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -76,7 +82,7 @@
                         <a class="nav-link " href="portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link " href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -84,16 +90,77 @@
                 </form>
             </div>
         </nav>
-
-        <!--TEXT-->
-        <div class="col- col-md-11 name ">
-            <h1 class="title mt-5 inout" id="name1"></h1> <!-- First part of name -->
-            <h1 class="title inout" id="name2"></h1> <!-- Second part of name -->
-            <p class="txt-5 inout" id="greeting"></p> <!-- Text content to type -->
-        </div>
-
     </header>
+
+    <!--CONTACT ME-->
+    <section class="contacme pt-5 pb-2 d-flex flex-column justify-content-center align-items-center">
+        <div class="col-12 col-md-12">
+            <h6 class="text-center txt-7 inout">CONTACT</h6>
+        </div>
+        <div class="col-12 col-md-12 mt-5">
+            <h1 class="text-center txt-2 inout">Minura Anuradha A. Jayasingha </h1>
+            <div class="d-flex flex-column justify-content-center align-items-center col-12 mt-5">
+                <h1 class="text-center txt-3 inout">minura.aaj01@gmail.com </h1>
+                <a href="#" class="btn5 inout" >
+                    <img  src="./Assets/images/Icon/email_3694406.png" alt="">
+                    Email
+                </a>
+            </div>
+            
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-10 mt-5">
+            <h1 class="text-center txt-3 inout">KEEP IN TOUCH </h1>
+            <ul class="s_btns inout">
+                <a href="#" class="btn5" >
+                    <img  src="./Assets/images/Icon/linkedin_3536505.png" alt="">
+                    LinkdeIn
+                </a>
+                <a href="#" class="btn5" >
+                    <img  src="./Assets/images/Icon/behance_3536806.png" alt="">
+                    Behance
+                </a>
+                <a href="#" class="btn5" >
+                    <img  src="./Assets/images/Icon/github_3291667.png" alt="">
+                    GitHub
+                </a>
+                <a href="#" class="btn5" >
+                    <img  src="./Assets/images/Icon/fiverr-new-2020-logo-354E8A08FD-seeklogo.com.png" alt="" style="border-radius: px;">
+                    Fiverr
+                </a>
+            </ul>
+            
+        </div>
+    </section>
     
+    <iframe class="map" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=sri%20lanka+(My%20Business%20Name)&amp;t=&amp;z=7&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="200" frameborder="0"></iframe>
+    <!--FOOTER-->
+    <footer class="pt-5">
+        <div class="row">
+            <div class="container-fluid col-6">
+                <ul>
+                    <li class="txt-5">
+                        I specialize in creating high-quality, user-focused designs and code that exceed expectations. With a passion for front-end development, UI/UX, and web technologies, I ensure every project balances both design and functionality with precision.
+                    </li>
+                </ul>
+            </div>
+            <div class="container-fluid col-6">
+                <ul class="linklist">
+                    <li><a class="link-1" href="https://github.com/minuraanuradha" target="_blank">GitHub</a></li>
+                    <li><a class="link-1" href="https://www.linkedin.com/in/minuraanuradha/" target="_blank">LinkedIn</a></li>
+                    <li><a class="link-1" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="container col-12">
+                <p class="txt-6 text-center">
+                    &copy; <script>document.write(new Date().getFullYear());</script> Minura Anuradha. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+
     <!-- Custom JavaScript link -->
     <script src="./assets/js/script.js"></script>
 

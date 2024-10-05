@@ -846,12 +846,6 @@ section.port_folio  {
     padding: 0 50px 0 50px;
 }
 
-header{
-    height: 100vh;
-    padding: 0 50px 0 50px;
-    display: flex;    
-    overflow: hidden;
-}
 
 /*------------Sections(800)------------*/
 @media (max-width: 800px) {
@@ -879,9 +873,6 @@ section.project_area{
     height: 8px;
     margin: 0px !important;
     padding: 0px !important;
-}
-
-.filter-item{
 }
 
 .filter-link {
@@ -1092,4 +1083,86 @@ section.project_area{
         padding: 2px 7px;
         font-size:0.6rem;
     }
+}
+
+
+section.contacme  {
+    padding: 0 20% 0 20%;
+}
+
+
+/*------------Sections(800)------------*/
+@media (max-width: 800px) {
+
+    section.contacme {
+        padding: 0 20px 0 20px;
+    }
+}
+
+/*------------Sections(500)------------*/
+@media (max-width: 500px) {
+
+    section.contacme{
+        padding: 0 10px 0 10px;
+    }
+
+}
+
+.btn5{
+    display: flex;  
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    color: var(--colour-white);
+    font-size: 0.8rem;
+    margin-top: 10px;
+    padding:0 15px 0 0;
+    border: 1px solid var(--colour-white);
+}
+.btn5:hover{
+    text-decoration: none;
+    color: var(--colour-black);
+    background-color: var(--colour-white);
+}
+
+.s_btns{
+    display: flex;    
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btn5 img{
+    height:30px;
+    background-color: #92929200;
+    padding:4px;
+    margin-right: 15px;
+    border-right: 1px solid var(--colour-white);
+}
+
+@media  (max-width: 550px) {
+    .s_btns{
+        display: flex;    
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .btn5{
+        display: flex;  
+        justify-content:space-around;
+        align-items: center;
+        flex-direction: row;
+        color: var(--colour-white);
+        font-size: 0.8rem;
+        margin-top: 10px;
+        padding:0 110px 0 0;
+        border: 1px solid var(--colour-white);
+        width:98px;
+    }
+    .btn5:hover{
+        text-decoration: none;
+        color: var(--colour-black);
+        background-color: var(--colour-white);
+    }
+
 }
