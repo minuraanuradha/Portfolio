@@ -130,3 +130,49 @@
     });
 
 
+    document.querySelector('.navbar-toggler').addEventListener('click', function() {
+        this.classList.toggle('clicked');
+    });
+
+
+    /*----------------------------------------------------------*/
+    //Portfolio Chnager
+
+    // Select all filter links
+    const filterLinks = document.querySelectorAll('.filter-link');
+    const cards = document.querySelectorAll('.p_card');
+
+    // Function to filter cards
+    function filterCards(filter) {
+        cards.forEach(card => {
+            if (filter === 'all') {
+                card.style.display = 'block';  // Show all cards if 'all' is selected
+            } else {
+                const category = card.getAttribute('data-category');
+                if (category === filter) {
+                    card.style.display = 'block'; // Show cards that match the filter
+                } else {
+                    card.style.display = 'none';  // Hide cards that don't match
+                }
+            }
+        });
+    }
+
+    // Add event listeners to filter links
+    filterLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Remove 'active' class from all links
+            filterLinks.forEach(link => link.classList.remove('active'));
+            
+            // Add 'active' class to the clicked link
+            e.target.classList.add('active');
+            
+            // Get the filter value (data-filter) from the clicked link
+            const filter = e.target.getAttribute('data-filter');
+            
+            // Call filter function
+            filterCards(filter);
+        });
+    });

@@ -56,41 +56,43 @@
     <!--HEADER-->
     <header>
         <!--NAV-->
-        <nav class="navbar navbar-expand-sm navbar-dark ">
-            <a class="navbar-brand inout" href="#">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <a class="navbar-brand " href="#">
                 <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+            <button class="navbar-toggler" id="navbarToggle" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="hamburger"><i class="fa-sharp fa-solid fa-bars" style="color: #ffffff;"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 ml-5 mt-lg-0">
-                    <li class="nav-item active mr-4 inout">
+                <ul class="navbar-nav mr-auto mt-2mt-lg-0">
+                    <li class="nav-item active ">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item mr-4 inout">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#">Services</a>
                     </li>
-                    <li class="nav-item mr-4 inout">
-                        <a class="nav-link " href="#">Portfolio</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="portfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-item mr-4 inout">
-                        <a class="nav-link " href="#">Contact</a>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <button class="btn my-2 my-sm-0 button1 inout" type="submit">Get In Touch</button>
+                    <button class="btn my-2 my-sm-0 button1 " type="submit">Get In Touch</button>
                 </form>
             </div>
         </nav>
 
         <!--TEXT-->
         <div class="col- col-md-11 name ">
-            <h1 class="title mt-5 inout" id="name1"></h1> <!-- First part of name -->
-            <h1 class="title inout" id="name2"></h1> <!-- Second part of name -->
-            <p class="txt-5 inout" id="greeting"></p> <!-- Text content to type -->
+            <h1 class="title mt-5 " id="name1"></h1> <!-- First part of name -->
+            <h1 class="title " id="name2"></h1> <!-- Second part of name -->
+            <p class="txt-5 " id="greeting"></p> <!-- Text content to type -->
         </div>
 
     </header>
@@ -453,6 +455,7 @@
             </div>
         </div>
     </footer>
+    
     <!-- Custom JavaScript link -->
     <script src="./assets/js/script.js"></script>
 
