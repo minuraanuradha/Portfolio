@@ -111,25 +111,18 @@
     /*----------------------------------------------------------*/
     //Courser Chnager
 
+    // Create a single circle element for the custom cursor
+    const cursorCircle = document.createElement('div');
+    cursorCircle.classList.add('circle');
+    document.body.appendChild(cursorCircle);
+
+    // Update the position of the circle on mouse move
     document.addEventListener('mousemove', function (e) {
-        // Create a new circle element
-        const circle = document.createElement('div');
-        circle.classList.add('circle');
-        
-        // Set the position of the circle
-        circle.style.left = `${e.pageX}px`;
-        circle.style.top = `${e.pageY}px`;
-
-        // Append the circle to the body
-        document.body.appendChild(circle);
-
-        // Remove the circle after the fade-out animation completes
-        setTimeout(() => {
-            circle.remove();
-        }, 500); // Matches the duration of the fade-out animation (0.5s)
+        cursorCircle.style.left = `${e.pageX}px`;
+        cursorCircle.style.top = `${e.pageY}px`;
     });
 
-
+    // Toggle class on navbar-toggler click
     document.querySelector('.navbar-toggler').addEventListener('click', function() {
         this.classList.toggle('clicked');
     });
