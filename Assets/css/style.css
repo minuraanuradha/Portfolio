@@ -428,7 +428,7 @@ section .collaboration {
     height: 80%;
     background-color: transparent;
 }
-header{
+.header{
     background-image:url(../images/BackGround/WebCoverline.png);
     background-repeat: no-repeat;
     background-position: right;
