@@ -301,14 +301,25 @@ section .collaboration {
     margin: 1vw
 }
 
+/* Tech Icons Styling */
+.icons {
+    margin: 5px;
+}
+
+.tech-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+
 @media (max-width: 768px) {
-    .icon {
+    .icons {
         font-size: 30px;
     }
 }
 
 @media (max-width: 480px) {
-    .icon {
+    .icons {
         font-size: 20px;
     }
 }
